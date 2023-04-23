@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import AppDataSource from "../db/appDataSource";
-import { Order } from "../entities/order.entity";
+import { Order } from "../models/order.entity";
 import { STATUS } from "../util/contant";
 
 const activeOrders = async (

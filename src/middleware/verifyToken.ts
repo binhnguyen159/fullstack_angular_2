@@ -7,8 +7,6 @@ const verifyAuthToken = (req: Request, res: Response, next: NextFunction) => {
     const token = authorizationHeader?.split(" ")[1] || "";
     jwt.verify(token, process.env.JWT_SECRET || "");
     next();
-    if (token && process.env.JWT_SECRET) {
-    }
   } catch (error) {
     res.status(401).json("Authenticate failed")
     throw new Error ((error as { message: string }).message);

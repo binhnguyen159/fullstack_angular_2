@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 import { v4 as uuidv4 } from "uuid";
 
 import AppDataSource from "../db/appDataSource";
-import { User } from "../entities/user.entity";
+import { User } from "../models/user.entity";
 
 const signupAccount = async (
   req: Request,

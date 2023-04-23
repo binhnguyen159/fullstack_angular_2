@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import AppDataSource from "../db/appDataSource";
-import { Product } from "../entities/product.entity";
+import { Product } from "../models/product.entity";
 
 const getProducts = async (req: Request, res: Response, next: NextFunction) => {
   const userRepository = AppDataSource.getRepository(Product);

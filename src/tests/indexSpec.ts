@@ -1,9 +1,9 @@
 import orderController from "../controller/order.controller";
 import productController from "../controller/product.controller";
 import userController from "../controller/user.controller";
-import { Order } from "../entities/order.entity";
-import { Product } from "../entities/product.entity";
-import { User } from "../entities/user.entity";
+import { Order } from "../models/order.entity";
+import { Product } from "../models/product.entity";
+import { User } from "../models/user.entity";
 import { getRepository, createConnection } from "typeorm";
 import { v4 as uuid4 } from "uuid";
 import { STATUS } from "../util/contant";
