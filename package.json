@@ -7,7 +7,11 @@
   "scripts": {
     "build": "npx tsc",
     "dev": "nodemon src/index.ts",
-    "test": "yarn build && yarn jasmine"
+    "test": "yarn build && yarn jasmine",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "migration:run": "yarn build && yarn typeorm migration:run -- -d dist/migration/appDataSource.js",
+    "migration:revert": "yarn build && yarn typeorm migration:revert -- -d dist/migration/appDataSource.js",
+    "migration:create": "typeorm migration:create src/migration/userMigration"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",

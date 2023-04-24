@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import AppDataSource from "../db/appDataSource";
+import AppDataSource from "../migration/appDataSource";
 import { Product } from "../models/product.entity";
 
 const getProducts = async (req: Request, res: Response, next: NextFunction) => {

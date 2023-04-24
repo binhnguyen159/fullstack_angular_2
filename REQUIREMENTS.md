@@ -28,7 +28,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 ## Data Shapes
 
 Product (id:varchar, name:varchar, price:number, category:varchar)
-Product (id:varchar, username:varchar, firstName:varchar, lastName:varchar, password: string)
+User (id:varchar, username:varchar, firstName:varchar, lastName:varchar, password: string)
 Orders (id:varchar, quantity:varchar, user_id:string[foreign key to users table], product_id:string[foreign key to products table])
 OrdersDetail(order_id:string[foreign key to orders table], product_id:string[foreign key to products table])
 

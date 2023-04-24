@@ -1,6 +1,6 @@
-import orderController from "../controller/order.controller";
-import productController from "../controller/product.controller";
-import userController from "../controller/user.controller";
+import orderController from "../handlers/order.handler";
+import productController from "../handlers/product.handler";
+import userController from "../handlers/user.handler";
 import { Order } from "../models/order.entity";
 import { Product } from "../models/product.entity";
 import { User } from "../models/user.entity";

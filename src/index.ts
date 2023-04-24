@@ -8,7 +8,7 @@ import router from "./router/index";
 dotenv.config();
 const app = express();
 app.use(cors())
-import AppDataSource from "./db/appDataSource";
+import AppDataSource from "./migration/appDataSource";
 
 AppDataSource.initialize()
   .then(() => {
