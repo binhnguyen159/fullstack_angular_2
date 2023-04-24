@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { v4 as uuidv4 } from "uuid";
 
-import AppDataSource from "../migration/appDataSource";
+import AppDataSource from "../data-source";
 import { User } from "../models/user.entity";
 
 const signupAccount = async (

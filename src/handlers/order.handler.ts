@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import AppDataSource from "../migration/appDataSource";
+import AppDataSource from "../data-source";
 import { Order } from "../models/order.entity";
 import { STATUS } from "../util/contant";
 
