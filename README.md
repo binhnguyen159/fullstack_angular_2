@@ -1,8 +1,9 @@
 Setting project:
 1. create a postgres local
 name: postgres, username:postgres, password: binh
-2. yarn install
-3. yarn dev
+2. create .env file and put all enviroment variable to it
+3. yarn install
+4. yarn dev
 
 #Environment variable
 
