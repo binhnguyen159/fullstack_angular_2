@@ -17,13 +17,13 @@ These are the notes from a meeting with the frontend developer that describe wha
 #### Users
 
 - Index [token required]: 'http://localhost:3000/api/v1/users/auth' [GET]
-- Show [token required]: 'http://localhost:3000/api/v1/users/auth/:userId' [GET]
+- Show [token required]: 'http://localhost:3000/api/v1/users/auth/:userid' [GET]
 - Create N[token required]: 'http://localhost:3000/api/v1/users/auth/add/user' [POST]
 
 #### Orders
 
-- Current Order by user (args: user id)[token required]: 'http://localhost:3000/api/v1/orders/active/:userId' [GET]
-- [OPTIONAL] Completed Orders by user (args: user id)[token required] 'http://localhost:3000/api/v1/orders/completed/:userId' [GET]
+- Current Order by user (args: user id)[token required]: 'http://localhost:3000/api/v1/orders/active/:userid' [GET]
+- [OPTIONAL] Completed Orders by user (args: user id)[token required] 'http://localhost:3000/api/v1/orders/completed/:userid' [GET]
 
 ## Data Shapes
 

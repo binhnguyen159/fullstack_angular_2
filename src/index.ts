@@ -7,7 +7,7 @@ import router from "./router/index";
 
 dotenv.config();
 const app = express();
-app.use(cors())
+app.use(cors());
 import AppDataSource from "./data-source";
 
 AppDataSource.initialize()
@@ -28,3 +28,5 @@ app.use("/api/v1", router);
 app.listen(port, () => {
   console.log("App is running at port " + port);
 });
+
+export default app;

@@ -10,15 +10,14 @@ const activeOrders = async (
 ) => {
   try {
     const userRepository = AppDataSource.getRepository(Order);
-    const userId = req.params.userId;
-    console.log("userId", userId)
+    const userid = req.params.userid;
     const orders = await userRepository.find({
       relations: {
         user: true
       },
       where: {
         user: {
-          id: userId
+          id: userid
         },
         status: STATUS.ACTIVE,
       },
@@ -36,10 +35,10 @@ const completedOrders = async (
 ) => {
   try {
     const userRepository = AppDataSource.getRepository(Order);
-    const userId = req.params.userId;
+    const userid = req.params.userid;
     const orders = await userRepository.find({
       // where: {
-      //   userId,
+      //   userid,
       //   status: STATUS.COMPLETED,
       // },
     });

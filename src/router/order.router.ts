@@ -4,7 +4,7 @@ import orderController from "../handlers/order.handler";
 
 const router = Router();
 
-router.get("/active/:userId", verifyAuthToken, orderController.activeOrders);
-router.get("/completed/:userId", verifyAuthToken, orderController.completedOrders);
+router.get("/active/:userid", verifyAuthToken, orderController.activeOrders);
+router.get("/completed/:userid", verifyAuthToken, orderController.completedOrders);
 
 export default router;
