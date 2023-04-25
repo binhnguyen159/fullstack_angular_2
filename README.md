@@ -7,7 +7,7 @@ Setting project:
 1. create a postgres local
 name: postgres, username:postgres, password: binh
 2. create .env file and put all enviroment variable to it
-3. yarn migration:run or yarn migration:revert
+3. Running: 'yarn migration:run' to creation DB which then connects to the project
 *yarn migration:run     like the sql.up file in pg-promise
 *yarn migration:revert  like the sql.down file in pg-peomise
 *I was create all 3 table User, Product, Order in a file ts in migrations folder
