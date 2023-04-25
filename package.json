@@ -11,9 +11,7 @@
     "typeorm": "typeorm-ts-node-commonjs",
     "migration:run": "yarn build && yarn typeorm migration:run -- -d dist/data-source.js",
     "migration:revert": "yarn build && yarn typeorm migration:revert -- -d dist/data-source.js",
-    "migration:create-user": "typeorm migration:create src/migrations/userMigration",
-    "migration:create-product": "typeorm migration:create src/migrations/productMigration",
-    "migration:create-order": "typeorm migration:create src/migrations/orderMigration"
+    "migration:create": "typeorm migration:create src/migrations/tableMigration"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",

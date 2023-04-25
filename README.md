@@ -1,7 +1,16 @@
+*NOTE: I am using typeorm (
+  not pg-promise as tutorial: so I do not have the sql file in migrations,
+  but I have the ts file and in it I am able to modify database as in the sql file of pg-promise
+)
+
 Setting project:
 1. create a postgres local
 name: postgres, username:postgres, password: binh
 2. create .env file and put all enviroment variable to it
+3. yarn migration:run or yarn migration:revert
+*yarn migration:run     like the sql.up file in pg-promise
+*yarn migration:revert  like the sql.down file in pg-peomise
+*I was create all 3 table User, Product, Order in a file ts in migrations folder
 3. yarn install
 4. yarn dev
 
