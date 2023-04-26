@@ -11,11 +11,11 @@ dotenv.config();
 
 const AppDataSource = new DataSource({
   type: "postgres",
-  host: "localhost", //process.env.DB_HOST,
+  host: process.env.DB_HOST,
   port: 5432,
-  username: "postgres", //process.env.DB_USERNAME,
-  password: "binh", //process.env.DB_PASSWORD,
-  database: "postgres", //process.env.DB_DATABASE,
+  username: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.ENV === "DEV" ? process.env.DB_DATABASE_DEV : process.env.DB_DATABASE_TEST,
   // synchronize: true,
   entities: [User, Product, Order],
   // entities: ["*/models/*.entity.ts"],
