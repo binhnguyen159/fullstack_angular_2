@@ -15,7 +15,7 @@ const AppDataSource = new DataSource({
   port: 5432,
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
-  database: process.env.ENV === "DEV" ? process.env.DB_DATABASE_DEV : process.env.DB_DATABASE_TEST,
+  database: process.env.ENV === "dev" ? process.env.DB_DATABASE_DEV : process.env.DB_DATABASE_TEST,
   // synchronize: true,
   entities: [User, Product, Order],
   // entities: ["*/models/*.entity.ts"],
