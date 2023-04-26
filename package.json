@@ -7,7 +7,7 @@
   "scripts": {
     "build": "npx tsc",
     "dev": "nodemon src/index.ts",
-    "test": "set ENV=test && yarn build && yarn jasmine",
+    "test": "set ENV=test && yarn migration:run && yarn build && yarn jasmine",
     "typeorm": "typeorm-ts-node-commonjs",
     "migration:run": "yarn build && yarn typeorm migration:run -- -d dist/data-source.js",
     "migration:revert": "yarn build && yarn typeorm migration:revert -- -d dist/data-source.js",
